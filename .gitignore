@@ -10,3 +10,4 @@ nohup*
 server/migrations/*
 .idea
 server/file/*
+*.swp
