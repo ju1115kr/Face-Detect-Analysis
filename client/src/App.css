@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #e5dbff;
+}
+
+.App {
+  text-align: center;
+}
+
+Dropzone:hover {
+    cursor: pointer;
+}
