@@ -15,6 +15,7 @@ div.FileUpload {
   display: block;
   text-align: center;
   justify-content: center;
+  width: 100%;
 } div.FileUpload:hover {
     cursor: pointer;
     opacity: 0.5;
@@ -22,3 +23,6 @@ div.FileUpload {
     background-color: #d0bfff;
 }
 
+img.resultImage {
+    justify-content: center;
+}

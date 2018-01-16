@@ -63,7 +63,7 @@ export default class App extends React.Component {
           {this.state.uploadedFileCloudinaryUrl === '' ? null :
           <div>
             <p>{this.state.uploadedFile.name}</p>
-            <img src={this.state.uploadedFileCloudinaryUrl} width="50%" height="50%" />
+            <img className="resultImage" src={this.state.uploadedFileCloudinaryUrl} width="50%" height="50%" />
           </div>}
         </div>
       </form>
