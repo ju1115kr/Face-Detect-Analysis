@@ -9,6 +9,16 @@ body {
   text-align: center;
 }
 
-Dropzone:hover {
+div.FileUpload {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  justify-content: center;
+} div.FileUpload:hover {
     cursor: pointer;
+    opacity: 0.5;
+    box-shadow: 2px grey;
+    background-color: #d0bfff;
 }
+

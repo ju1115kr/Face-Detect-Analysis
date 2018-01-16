@@ -52,7 +52,7 @@ export default class App extends React.Component {
             onDrop={this.onImageDrop.bind(this)}
             multiple={false}
             accept="image/*">
-            <div>Drop an image or click to select a file to upload.</div>
+            <div>당신의 일상을 보여주세요.(4mb 이하)</div>
           </Dropzone>
         </div>
 

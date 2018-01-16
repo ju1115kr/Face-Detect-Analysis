@@ -10,4 +10,5 @@ nohup*
 server/migrations/*
 .idea
 server/file/*
+!server/file/empty
 *.swp
