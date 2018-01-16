@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import FacebookLogin from 'react-facebook-login';
 
 export default class FACEBOOK extends React.Component {
@@ -18,7 +17,6 @@ export default class FACEBOOK extends React.Component {
             userPicture: pictureURL
         });
         console.log(pictureURL);
-        return(pictureURL)
     }
 
     render() {
@@ -27,6 +25,7 @@ export default class FACEBOOK extends React.Component {
                 appId="1339808736124796" // Facebook Test Page App ID
                 autoLoad={false}
                 fields="name, email, picture"
+                scope="public_profile"
                 callback={this.responseFacebook} 
             />
         )
