@@ -2,6 +2,7 @@ import React from 'react';
 import Dropzone from 'react-dropzone';
 import request from 'superagent';
 import './App.css';
+import FACEBOOK from './facebook';
 
 const CLOUDINARY_UPLOAD_URL = 'http://ju1115kr.iptime.org:9009';
 const CLOUDINARY_UPLOAD_API_PATH = '/api/v1.0/file'
@@ -55,6 +56,8 @@ export default class App extends React.Component {
             <div>당신의 일상을 보여주세요.(4mb 이하)</div>
           </Dropzone>
         </div>
+    
+        <FACEBOOK />
 
         <div>
           {this.state.uploadedFileCloudinaryUrl === '' ? null :
