@@ -33,14 +33,11 @@ export default class App extends React.Component {
       if (err) {
         console.error(err);
       }
-      //console.log(response);
-      //console.log(response.body)
 
       if (response.body !== '') {
         this.setState({
             uploadedFileCloudinaryUrl: CLOUDINARY_UPLOAD_URL  + response.text
         });
-        //console.log(this.uploadedFileCloundinaryUrl);
       }
     });
   }
@@ -50,6 +47,7 @@ export default class App extends React.Component {
       <form>
         <div className="FileUpload">
           <Dropzone
+            width="100%"
             onDrop={this.onImageDrop.bind(this)}
             multiple={false}
             accept="image/*">
