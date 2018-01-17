@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 import os
 import time
+import requests
 from flask import request, jsonify, g, send_from_directory, redirect, url_for, make_response
 from . import api
 from errors import not_found, forbidden, bad_request
@@ -46,4 +47,22 @@ def post_file():
 @api.route('/file/<filelocate>', methods=['GET'])
 def uploaded_file(filelocate):
     return send_from_directory(UPLOAD_FOLDER, filelocate)
+
+
+#@api.route('/profilePicutre', methods=['POST'])
+#def post_profilePicture():
+#    if request.json is None:
+#        return bad_request('JSON Request is invaild')
+#
+#    url = request.args['url']
+#    id = request.args['id']
+#    outputFile = outputFilename(id)
+#
+#    r = requests.get(url)
+#
+#    with open(id, 'wb') as picture:
+#        picture.write(r.content)
+        
+
+
 
